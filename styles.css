@@ -41,10 +41,17 @@
     grid-row-end:2;
     background-color: lightcoral;
 }
-
+.clear:hover{
+    background-color: rgb(235, 119, 119);
+}
 .screen{
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end:1;
+}
+
+.button:hover{
+    background-color: rgb(189, 188, 188);
+    border-color: lightcoral;
 }

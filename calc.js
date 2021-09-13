@@ -28,7 +28,8 @@ let answer = "";
 
 function updateDisplay(value){
     value = value.currentTarget.attributes.id.value;
-    if (/[=]/.test(value) && (num1 == "" || num2 == "")){
+
+    if(/[=]/.test(value) && (num1 == "" || num2 == "")){
         oper = "";
     }else if (/[0-9.]/.test(value) == true && oper == ""){
         answer = "";
@@ -56,7 +57,6 @@ function updateDisplay(value){
     return document.querySelector('.screen').innerText = `${num1} ${oper} ${num2}`;
     
 }
-
 function clearDisplay(){
     num1 = "";
     num2 = "";
