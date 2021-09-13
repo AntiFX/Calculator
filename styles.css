@@ -4,9 +4,13 @@
     width: 100vw;
     align-content: center;
     justify-content: center;
+    
 }
 .calcBody {
     display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px 10px 10px 10px;
     align-content: center;
     justify-content: center;
     background-color: gray;
@@ -26,6 +30,7 @@
 .screen{
     align-content: bottom;
     justify-content: right;
+    padding-right: 10px;
 }
 .clear{
     grid-column-start: 1;
