@@ -28,7 +28,9 @@ let answer = "";
 
 function updateDisplay(value){
     value = value.currentTarget.attributes.id.value;
-    if (/[0-9.]/.test(value) == true && oper == ""){
+    if (/[=]/.test(value) && (num1 == "" || num2 == "")){
+        oper = "";
+    }else if (/[0-9.]/.test(value) == true && oper == ""){
         answer = "";
         num1 += value;
     }else if(/[0-9.]/.test(value) == false && oper == "" && answer != ""){
@@ -44,12 +46,12 @@ function updateDisplay(value){
        if (answer.toString().length > 20){
            answer = answer.toPrecision(20);
        }
-       if(/[=]/.test(value)){
-           oper = "";
-       } else {oper = value;}
-       num1 = answer;
-       num2 = "";
-    }
+        if(/[=]/.test(value)){
+        oper = "";
+        } else {oper = value;}
+        num1 = answer;
+        num2 = "";
+        }
 
     return document.querySelector('.screen').innerText = `${num1} ${oper} ${num2}`;
     
