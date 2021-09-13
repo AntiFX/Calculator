@@ -21,3 +21,8 @@ function operator(num1, num2, oper){
             return divide(num1,num2);
     }
 }
+let displayVal = 0;
+
+function updateDisplay(value){
+    return document.querySelector('.screen').innerText = value;
+}
