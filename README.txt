@@ -1,4 +1,4 @@
 A nice browser based calculator. 
 
 
-View the demo here: https://antifx.github.io/Calculator/
+View the demo here: https://thags.github.io/Calculator/
